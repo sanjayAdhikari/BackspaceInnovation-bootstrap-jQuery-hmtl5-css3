@@ -10,6 +10,12 @@
                 Black               :   #000        
 *********************************************/
 
+/* @import url("./css/fonts/css/fontawesome-all.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i");
+@import url("./css/animate/animate.css");
+@import url("./css/bootstrap/bootstrap.min.css"); */
+
+
 /* General CSS */
 
 html,
@@ -21,6 +27,16 @@ body {
     font-family: "Roboto Condensed", sans-serif;
 }
 
+p {
+    color: #64707b;
+    font-weight: 300;
+}
+
+h3 {
+    color: #41464b;
+    text-transform: uppercase;
+}
+
 /* *****************************************************
                         Home
 /* *****************************************************/
@@ -29,17 +45,9 @@ body {
     height: 100%;
 }
 
-h3 {
-    text-transform: uppercase;
-}
-
 #home-cover {
-    background-image: url("/images/bg-home.jpg");
+    background-image: url("/public//images/bg-home.jpg");
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 #home-content-box {
@@ -57,7 +65,7 @@ h3 {
 #home-heading h3 {
     color: #fff;
     font-size: 55px;
-    font-weight: 700;
+    font-weight: 700px;
     margin: 20px 0 20px 0;
 }
 
@@ -86,3 +94,286 @@ h3 {
     color: #41464b;
     text-decoration: none !important
 }
+
+
+.btn-blue {
+    border-color: #34c6d3;
+    color: #34c6d3;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    background-color: #34c6d3;
+    color: #fff;
+    text-decoration: none !important
+}
+/* *****************************************************
+                        PARALLAX --Generic
+/* *****************************************************/
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* *****************************************************
+                        ANIMATED --Generic
+/* *****************************************************/
+
+#home-cover,
+#home-heading,
+#home-btn {
+    animation-duration: .5s;
+}
+
+#home-cover {
+    animation-delay: .1s;
+}
+
+#home-heading {
+    animation-delay: .5s;
+}
+
+#home-btn {
+    animation-delay: .7s;
+}
+
+/* *****************************************************
+                        CONTENT --Generic
+/* *****************************************************/
+
+.content-box {
+    padding: 100px 0 30px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center !important;
+    margin: 0 0 20px 0;
+}
+
+.content-title-underline {
+    width: 40px;
+    height: 3px;
+    background-color: #34c6d3;
+    margin: 0 auto 30px auto;
+}
+
+/* *****************************************************
+                        SERVICE
+/* *****************************************************/
+
+.service-item {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.service-item-icon i {
+    color: #34c6d3;
+    float: left;
+    padding: 15px;
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.service-item .service-item-icon i:hover {
+    color: #fff;
+    background-color: #34c6d3;
+}
+
+.service-item-title h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.service-item-description p {
+    margin: 0;
+    padding-left: 85px
+}
+
+
+
+/* *****************************************************
+                        About
+/* *****************************************************/
+
+#about-bg-diagonal{
+    width: 55%;
+    float: right;
+    height: 700px;
+    border-top: 700px solid transparent;
+    border-left: 200px solid #fff;
+    background-image: url('../images/bg-about.jpg');
+}
+
+#about-content-box {
+    background-color: #FFF;
+    float: left;
+    height: 700px !important;
+}
+
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#about .content-title h3 {
+    text-align: left;
+    padding-left: 0;
+    display: inline-block;
+    color: #34c6d3;
+}
+
+#about .content-title-underline{
+    margin:0 0 30px 0;
+}
+
+
+/* *****************************************************
+                        WORK
+/* *****************************************************/
+.row.no-gutters [class*=col-]{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-wrapper{
+    overflow: hidden;
+}
+
+.img-wrapper img{
+    transition: transform 1s ease;
+}
+.img-wrapper img:hover {
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+/* *****************************************************
+                        TEAM
+/* *****************************************************/
+
+
+ .team-member{
+     margin: 0 15px;
+ }
+
+ .team-member-info {
+     padding: 10px 0 30px 0;
+ }
+
+ h4.team-member-name {
+     font-size: 22px;
+     font-weight: 700;
+     letter-spacing: 1px;
+     padding-top: 2px;
+
+ }
+
+ h4.team-member-designation{
+    color: #34c6d3;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-style: italic;
+    margin-top: 5px;
+ }
+/* *****************************************************
+                        SOCIAL Generic
+/* *****************************************************/
+.social-list {
+    padding-left: 0;
+
+}
+
+.social-list li{
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+
+}
+
+.social-icon i {
+    font-size: 17px;
+
+}
+
+.icon-gray {
+    color: #64707b;
+    
+}
+
+/* *****************************************************
+                        CONTACT
+/* *****************************************************/
+
+footer {
+    background-color: #41464b;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+/* *****************************************************
+                        FOOTER
+/* *****************************************************/
+
+#footer-bottom {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+#footer-copyrights p {
+    color: #fff;
+    margin: 0;
+}
+
+#footer-menu {
+    color: #fff;
+    float: left;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+}
+
+#footer-menu ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0;
+}
+
+#footer-menu ul li {
+    display: inline-block;
+}
+
+#footer-menu a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-decoration: none;
+    padding-top: 0;
+}
+
+#footer-menu a:hover {
+    color: #34c6d3;
+}
+
